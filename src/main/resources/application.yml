@@ -1,0 +1,37 @@
+logging:
+  file:
+    name: loggingdataFile.log
+  level:
+    com:
+      example:
+        controller: info
+        exception: warn
+        service: info
+sonar:
+  java:
+    binaries: target/classes
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: Swathi07@
+
+    url: jdbc:postgresql://database-1.cwnreuomznpv.us-east-2.rds.amazonaws.com/gameservice
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+#spring.datasource.url=jdbc:postgresql://localhost:5432/gameservice
+#spring.datasource.username=postgres
+#spring.datasource.password=Swathi07@
+#spring.datasource.driver-class-name=org.postgresql.Driver
+
+#hibernate configuration
+#spring.jpa.hibernate.ddl-auto=create-drop
+#spring.jpa.hibernate.ddl-auto=update
+#spring.jpa.show-sql=true
+
+
+
